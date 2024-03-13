@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Urracas</title>
 </head>
 <body>
@@ -14,22 +15,32 @@
         <!-- No toda la información de este artículo es real, esto solo es para practicar HTML y muchas cosas no están comprobadas -->
     </header>
 
-        <nav>
+        <nav id="nav-bueno">
 
             <label class="logo"><a href=""><img id="inicio" class="urraca" src="imgs/007_magpie-30882_960_720.webp" alt="logo urraca"></a></label>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="news.html">Noticias</a></li>
-                    <li><a href="formulario.html">Suscripción</a></li>
-                    <li><a href="#">Galería</a></li>
+                    <li><a href="#">Inicio<span class="material-symbols-outlined">
+                        home
+                        </span></a></li>
+                    <li><a href="news.html">Noticias<span class="material-symbols-outlined">
+                        feed
+                        </span></a></li>
+                    <li><a href="formulario.html">Suscripción<span class="material-symbols-outlined">
+                        mail
+                        </span></a></li>
+                    <li><a href="#">Galería<span class="material-symbols-outlined">
+                        photo
+                        </span></a></li>
                 </ul>
     
         </nav>
 
+        
+
 
             <br />
 
-            <a href="https://es.wikipedia.org/wiki/Pica_pica" target="_blank">
+            <a class="desaparece-movil" href="https://es.wikipedia.org/wiki/Pica_pica" target="_blank">
                 <img class="imagenprimera" src="https://seo.org/wp-content/uploads/2013/10/Urraca_comun-%C2%A9Butterfly-Hunter-shutterstock397530829-scaled.jpg" alt="Urraca sobre una rama" width="400px" height="auto" title="Urraca">
             </a>
             <figure class="cantodeurraca">
@@ -40,8 +51,47 @@
             </figure>
             <hr />
             <br />
-    
 
+        
+    
+            <section class="parent">
+                <article class="box" id="nombre">Urraca común</article>
+        
+                <article class="box" id="fondofoto"></article>
+                
+                <article class="box" id="audio_urraca">
+                    <figure class="cantodeurraca">
+                        <audio controls>
+                            <source src="audio/canto_urraca.ogg" type="audio/ogg">
+                        </audio>
+                        <figcaption><i>Canto de la urraca</i></figcaption>
+                    </figure>
+                </article>
+                
+                <article class="box" id="distribucion">
+                    <u>Distribución</u>
+        
+                    <br />
+                    <br />
+        
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Pica_pica_map.png/250px-Pica_pica_map.png" alt="mapa de dónde ir de vacaciones a ver urracas">
+        
+                    <ul>
+                        <li id="viñeta1">Pica p. pica</li>
+                        <li id="viñeta2">Pica p. fennorum</li>
+                        <li id="viñeta3">Pica p. melanotos</li>
+                        <li id="viñeta4">Pica p. bactriana</li>
+                    </ul>
+                    
+                    
+                </article>
+        
+                <article class="box" id="peligro"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Status_iucn3.1_LC_es.svg/200px-Status_iucn3.1_LC_es.svg.png" alt="Estado de conservación de la Urraca"></article>
+        
+            </section>
+
+            
+            
 
             <aside>
                 <h2 id="indice">Índice</h2>
@@ -62,15 +112,18 @@
             <br />
         <hr>
 
+
+    
+
         <section>
-            <article>
+            <article class="texto-urracas">
                 <p>Las <strong><a href="https://es.wikipedia.org/wiki/Pica_pica" target="_blank">urracas</a></strong>, conocidas científicamente como <em>Pica pica</em>, son aves altamente inteligentes y fascinantes que pertenecen a la familia de los <i>córvidos</i>.</p>
                 
                 <p>Son reconocibles por su plumaje negro brillante, cola larga y alas rayadas de blanco.</p>
                 <p>Estas aves se encuentran en <a href="tablas.html#paises-poblacion" target="_blank">diversas partes del mundo</a> y han capturado la atención de la gente a lo largo de la historia debido a <a href="https://www.youtube.com/watch?v=u78_A7DLGys" target="_blank">sus comportamientos peculiares</a> y su capacidad para adaptarse a entornos variados.</p>
             </article>
             <hr />
-            <article>
+            <article class="texto-urracas">
                 <h2 id="caracteristicas">Características Físicas y Distribución Geográfica</h2>
                     <h3 id="caracteristicas_fisicas">Características Físicas</h3>
                         <p>Las <b><u>urracas</u></b> son aves de tamaño mediano, midiendo alrededor de 45 a 60 centímetros de largo, incluyendo su larga cola.</p>
@@ -85,7 +138,7 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46987.584560756746!2d-5.618590854546519!3d42.603598269577446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a9a0d5e1bd9%3A0x7d849ffad4f1eef3!2zTGXDs24!5e0!3m2!1ses!2ses!4v1696095359124!5m2!1ses!2ses" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
             <hr />
-            <article>
+            <article class="texto-urracas">
                 <h2 id="comportamiento">Comportamiento Inteligente</h2>
                     <p>Una de las características más notables de las <u><b>urracas</b></u> es su <strong>inteligencia</strong>.</p>
                     <p>Estas aves son conocidas por su capacidad para resolver problemas, aprender de su entorno y, en algunos casos, <a href="https://www.youtube.com/watch?v=yvtWswhO3Hk" target="_blank">interactuar con los humanos de manera sorprendente</a>.</p>
@@ -99,7 +152,7 @@
                     <img style="margin-left: 500px;" src="imgs/001_par_de_aves.jpg" alt="Unas urracas pasando el rato juntas" title="Dos urracas hablando de política" width="300px" height="auto" border="3">
             </article>
             <hr />
-            <article>
+            <article class="texto-urracas">
                 <h2 id="dieta">Dieta y Alimentación</h2>
                     <p>Las urracas son <strong>omnívoras</strong> y tienen una dieta variada. Se alimentan de:</p>
                     <ul>
@@ -115,7 +168,7 @@
             </article>
 
             <hr />
-            <article>
+            <article class="texto-urracas">
                 <h2 id="importancia">Importancia Ecológica</h2>
                     <p>Estas aves también juegan un papel importante en los ecosistemas donde se encuentran. Ayudan a <strong>controlar las poblaciones de insectos</strong> al alimentarse de ellos y, al dispersar las semillas de las frutas que consumen, contribuyen a la <strong>propagación de plantas</strong>. Además, su papel en la cadena alimentaria como presas para aves rapaces y carnívoros es crucial para <strong>mantener el equilibrio ecológico</strong>.</p>
                     <figure>
@@ -129,7 +182,7 @@
             </article>
             <hr />
             
-            <article>
+            <article class="texto-urracas">
                 <h2 id="conservacion">Conservación</h2>
                     <p>Las urracas no se consideran actualmente en peligro de extinción y su población se mantiene estable en muchas áreas. Sin embargo, como sucede con muchas especies de aves, enfrentan amenazas como la pérdida de hábitat debido a la urbanización y la agricultura intensiva. La conservación de sus hábitats naturales y la promoción de prácticas de manejo sostenible son clave para garantizar su supervivencia continua.</p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/WcobQ5xO80E?si=mKN9lDHRXzcEFKtn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

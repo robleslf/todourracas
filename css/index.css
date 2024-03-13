@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Orbitron:wght@700&family=Shizuru&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +10,13 @@
     list-style: none;
 }
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
 
 body {
     background-image: url(../imgs/005_background.jpg);
@@ -37,7 +47,7 @@ p {
     1px 1px 0 black;
   }
 
-article {
+article.texto-urracas {
     background: linear-gradient(135deg, #c04ef5, #8effffd7); 
     border: 2px solid #ffe9a6b9; 
     padding: 10px;
@@ -74,7 +84,7 @@ h1 {
 
 
 
-nav {
+nav#nav-bueno {
     height: 80px;
     width: 100%;
     font-family: "Orbitron", sans-serif;
@@ -184,3 +194,133 @@ aside a:hover {
     margin-left: 50%;
     width: 290px;
 }
+
+
+
+#nombre {
+    flex-grow: 1;
+    color: rgb(14, 7, 46);
+    font-weight: bold;
+    background-color: burlywood;
+}
+
+
+#foto {
+    flex-grow: 2;
+}
+
+#fondofoto {
+    background-image: url(https://www.againstcorvidtraps.co.uk/assets/images/corvid-trap-header-magpies-1024x356.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+img[alt="Urraca estudiando el paisaje"] {
+    height: 110px;
+    text-align: center;
+    margin-top: 13px;
+    border: 3px rgb(192, 211, 247) solid;
+}
+
+#audio_urraca {
+    flex-grow: 1;
+    flex-shrink: 0; 
+    font-size: 15px;
+}
+
+#audio_urraca audio {
+    width: 100%; 
+}
+
+
+#distribucion {
+    flex-grow: 4;
+    font-size: 16px;
+}
+
+
+img[alt^="mapa"] {
+    width: 200px;
+}
+
+
+#viñeta1 { color: rgb(162, 51, 196); }
+#viñeta2 { color: rgb(11, 97, 11); }
+#viñeta3 { color: rgb(34, 92, 180); }
+#viñeta4 { color: rgb(168, 17, 17); }
+
+
+@media only screen and (min-width: 1300px) {
+    .parent {
+        border: 3px solid rgb(109, 120, 184);
+        box-sizing: border-box;
+        width: 300px;
+        height: 700px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: rgb(109, 120, 184);
+        position: fixed;
+        top: 58%; 
+        right: 20px; 
+        transform: translateY(-50%);
+    }
+    
+    .box {
+        background-color: antiquewhite;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid rgb(109, 120, 184);
+        text-align: center;
+        font-size: 2rem;
+        font-family: "Josefina Sans", class="nav-repuesto";
+        width: 294.3px;
+        height: 100px;
+        align-content: stretch;
+    }
+
+    .texto-urracas {
+        width: 75%;
+        margin: 20px auto;
+    }
+
+    aside {
+        width: 52%;
+        margin: 20px auto;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .parent {
+        display: none;
+    }
+
+    
+    
+}
+
+
+@media only screen and (max-width: 550px) {
+
+    .desaparece-movil {
+        display: none;
+    }
+
+    .cantodeurraca {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
