@@ -58,7 +58,7 @@ article.texto-urracas {
     margin: 20px;
 }
 
-aside {
+aside#indice-aside {
     line-height: 2;
 }
 
@@ -144,31 +144,31 @@ nav a.active, nav a:hover {
     margin: 20px; 
 }
 
-aside {
-    background-color: #f0f0f086;
+aside#indice-aside {
+    background-color: #47181886;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
-aside h2 {
+aside#indice-aside h2 {
     color: #2e1469;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
 
-aside ol {
+aside#indice-aside ol {
     list-style: none;
     padding: 0;
 }
 
-aside li {
+aside#indice-aside li {
     margin-bottom: 10px;
 }
 
-aside a {
+aside#indice-aside a {
     text-decoration: none;
     color: #9f22be;
     display: block;
@@ -178,7 +178,7 @@ aside a {
     font-family: Orbitron;
 }
 
-aside a:hover {
+aside#indice-aside a:hover {
     background-color: #ddd;
 }
 
@@ -188,7 +188,7 @@ aside a:hover {
 }
 
 .imagenprimera {
-    border: #c04ef5 solid 3px;
+    border: #1e0729 solid 3px;
     border-radius: 19px;
     margin-top: 150px;
     margin-left: 50%;
@@ -199,14 +199,17 @@ aside a:hover {
 
 #nombre {
     flex-grow: 1;
-    color: rgb(14, 7, 46);
+    color: rgb(7, 2, 27);
     font-weight: bold;
-    background-color: burlywood;
+    background: linear-gradient(135deg, #c04ef5, #8effffd7);
+    border-radius: 15px 15px 0 0; 
+    border: solid;
 }
 
 
 #foto {
     flex-grow: 2;
+    border: solid;
 }
 
 #fondofoto {
@@ -227,6 +230,8 @@ img[alt="Urraca estudiando el paisaje"] {
     flex-grow: 1;
     flex-shrink: 0; 
     font-size: 15px;
+    background: linear-gradient(135deg, #e2d3e9, #8effffd7);
+    border: solid;
 }
 
 #audio_urraca audio {
@@ -237,8 +242,16 @@ img[alt="Urraca estudiando el paisaje"] {
 #distribucion {
     flex-grow: 4;
     font-size: 16px;
+    background: linear-gradient(135deg, #bee2e2, #8effffd7);
+    border: solid;
 }
 
+#peligro {
+    background: linear-gradient(-10deg, #c04ef5, #8effffd7);
+    border: solid;
+    border-radius:  0 0 15px 15px;
+
+}
 
 img[alt^="mapa"] {
     width: 200px;
@@ -253,7 +266,7 @@ img[alt^="mapa"] {
 
 @media only screen and (min-width: 1300px) {
     .parent {
-        border: 3px solid rgb(109, 120, 184);
+        /* border: 3px solid rgb(3, 7, 27); */
         box-sizing: border-box;
         width: 300px;
         height: 700px;
@@ -261,7 +274,7 @@ img[alt^="mapa"] {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        color: rgb(109, 120, 184);
+        color: rgb(3, 7, 27);
         position: fixed;
         top: 58%; 
         right: 20px; 
@@ -272,7 +285,7 @@ img[alt^="mapa"] {
         background-color: antiquewhite;
         padding: 10px;
         box-sizing: border-box;
-        border: 1px solid rgb(109, 120, 184);
+        border: 1px solid rgb(3, 7, 27);
         text-align: center;
         font-size: 2rem;
         font-family: "Josefina Sans", class="nav-repuesto";
@@ -286,7 +299,7 @@ img[alt^="mapa"] {
         margin: 20px auto;
     }
 
-    aside {
+    aside#indice-aside {
         width: 52%;
         margin: 20px auto;
     }
@@ -307,8 +320,9 @@ img[alt^="mapa"] {
 
 @media only screen and (max-width: 550px) {
 
-    .desaparece-movil {
-        display: none;
+    .imagenprimera {
+        width: 100px;
+        border-color: #030108;
     }
 
     .cantodeurraca {
