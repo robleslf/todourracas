@@ -291,7 +291,7 @@ img[alt^="mapa"] {
         transform: translateY(-50%);
     }
     
-    /* .box {
+    .box {
         background-color: antiquewhite;
         padding: 10px;
         box-sizing: border-box;
@@ -302,7 +302,7 @@ img[alt^="mapa"] {
         width: 294.3px;
         height: 100px;
         align-content: stretch;
-    } */
+    }
 
     .texto-urracas {
         width: 75%;
